@@ -3,87 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="coundown.css">
     <title>Countdown Timer</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="countdown.css" />
-    <style>
-      .sect1{
-        postion:fixed;
-        top: 0;
-        left: 100%;
-        height:100%;
-        background-color: rgb(232 ,134 ,188);
-        z-index: -1; /*Ensure it's behind the content */
-      }
-      body{
-        font-family: Arial, Sans-serif;
-        padding:50px;
-        position: relative; /* Ensure content doesnt overlap */
-        z-index: 1; /*Ensure it's in front of the background */
-      }
-      .box{
-        margin: 0 auto;
-        width: 300px;
-
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 20px;
-      }
-      .text1{
-        text-align: center;
-        color:beige;
-      }
-      .phoneimg{
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        border-radius: 25px;
-        margin-top: 20px;
-      }
-      .sub{
-        font-size: 15px;
-        font-weight: bold;
-      }
-      .text2{
-        font-size:15px;
-      }
-      .countdownbox{
-        background-color: lightblue;
-        margin-right: 20px;
-        padding: 5px;
-        border-radius: 10px;
-        width: 50px;
-        text-align: center;
-      }
-      .dates{
-        display: inline-flex;
-      }
-    </style>
   </head>
   <body>
     <section class="section-center">
       <!-- image -->
-      <article class="gift-img">
+      <article class="giftimg">
         <img src="img_iphone.jpg" alt="iphone" />
       </article>
       <!-- info -->
       <article class="gift-info">
-        <h3>GIVEAWAY FOR 10 IPHONES</h3>
+        <h1>GIVEAWAY FOR 10 IPHONES</h1>
         <h2>"YOU SNOOZE YOU LOOSE"</h2>
         <h4 class="giveaway">
-          giveaway ends on Sunday, 24 April 2023, 11:00am
+          Giveaway ends on Sunday, 24 April 2023, 11:00am
         </h4>
-        <p>
+        <p class="word">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br>
           Reprehenderit molestiae cum libero atque ut voluptate qui consectetur<br>
           aliquid incidunt voluptatem quos, dolore, non commodi quaerat aliquam<br>
           eligendi, quisquam totam blanditiis.
+          
 
           <!-- javascript -->
     <script src="countdown.js"></script>
     <script>
-      // Set the date we're counting down to
+      // Set the date we're counting down to 
       var countDownDate = new Date("Mar 15, 2024 00:00:00").getTime();
       
       // Update the countdown every second
@@ -102,8 +49,8 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
           // Display the result in the element with id="countdown"
-          document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
+          document.getElementById("countdown").innerHTML = days + "days " + hours + "hours" + "  "
+          + minutes + "minutes" + "  " + seconds + "seconds" + "  ";
       
           // If the countdown is over, display a message
           if (distance < 0) {
@@ -115,9 +62,13 @@
       </head>
       <body>
       
-      <h2>iPhone Giveaway Countdown</h2>
+      <h3>Iphone Giveaway Countdown</h3>
       <p id="countdown"></p>
       
+      </body>
+      </html>
+      </body>
+      </html>
       </body>
       </html>
 </body>
